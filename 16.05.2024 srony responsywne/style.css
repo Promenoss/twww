@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    overflow-x:hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+
+}
+
+header img
+{
+    width: 100%;
+    max-width: 50vw;
+}
+
+/* navbar */
+
+nav {
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav ul li
+{
+    width: 20%;
+    background-color: blue;
+    overflow: hidden;
+    margin: 0px 10px;
+    text-align: center;
+    height: 20px;
+    transition: all .3s;
+}
+
+nav ul li a 
+{
+    width: 100%;
+    margin: 20px;
+    padding: 125px;
+    text-decoration: none;
+    color: white;
+    transition: all .3s;
+}
+
+nav ul li:hover
+{
+    transform: scale(1.1);
+    background-color: rgba(128, 128, 237, 0.859);
+}
+
+nav ul li:hover a
+{
+    color: black;
+}
+
+/* navbar end */
+
+main
+{
+    display: flex;
+    justify-content: left;
+    height: 64.6vh;
+    overflow: hidden;
+}
+
+section
+{
+    width: 35vw;
+    margin: 20px;
+}
+
+aside
+{
+    width: 28vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2
+{
+    border-left: 1px solid black;
+    padding-left: 20px;
+}
+
+aside img
+{
+    width: 100%;
+}
+
+footer
+{
+    background-color: blue;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4vh;
+    color: white;
+}
+
+@media (max-width:800px)
+{
+    main
+    {
+        overflow: visible;
+        height: auto;
+    }
+
+    section
+    {
+        width: 200vw;
+    }
+
+    nav ul
+    {
+        flex-direction: column;
+    }
+
+    nav ul li
+    {
+        width: 400px;
+        overflow: hidden;
+    }
+
+    nav ul li a
+    {
+        padding: 150px;
+    }
+
+    footer
+    {
+        width: 100vw;
+    }
+    
+    aside
+    {
+        align-items: baseline;
+    }
+
+    aside img
+    {
+        width: 200px;
+        margin-top: 200px;
+    }
+}
+
+
+@media (max-width:500px)
+{
+    main
+    {
+        overflow: visible;
+        height: auto;
+        display: flex;
+        width: 100vw;
+    }
+
+    section p
+    {
+        width: 185px;
+    }
+
+    aside
+    {
+        visibility: hidden ;
+    }
+
+    nav ul
+    {
+        flex-direction: column;
+    }
+
+    nav ul li
+    {
+        width: 400px;
+        overflow: hidden;
+    }
+
+    nav ul li a
+    {
+        padding: 150px;
+    }
+
+    footer
+    {
+        width: 100vw;
+    }
+}
